@@ -25,7 +25,7 @@ def get_user_input
 end
 
 def end_game(numb)
-  
+  puts "Sorry, you hit #{numb}. Thanks for playing!"
   # code #end_game here
 end
 
