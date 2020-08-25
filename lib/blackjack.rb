@@ -40,9 +40,22 @@ end
 
 def hit?
   # code hit? here
+  prompt_user
+  move = ""
+  while move != "h" and move != "s"
+    move = get_user_input
+    if move != "h" and move != "s"
+      invalid_command
+    end
+  end
+  if move = "h"
+    deal_card
+  end
+    
 end
 
 def invalid_command
+  puts "Please enter a valid command"
   # code invalid_command here
 end
 
