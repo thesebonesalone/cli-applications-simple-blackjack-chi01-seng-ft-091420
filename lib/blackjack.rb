@@ -38,7 +38,7 @@ def initial_round
   sum
 end
 
-def hit?
+def hit?(total)
   # code hit? here
   prompt_user
   move = ""
@@ -49,7 +49,7 @@ def hit?
     end
   end
   if move == "h"
-    deal_card
+    total += deal_card
   end
     
 end
