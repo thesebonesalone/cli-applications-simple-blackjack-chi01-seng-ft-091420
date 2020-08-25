@@ -49,7 +49,7 @@ def hit?(total)
       invalid_command
     end
   end
-  if move = "h"
+  if move == "h"
     total += deal_card
   end
   
