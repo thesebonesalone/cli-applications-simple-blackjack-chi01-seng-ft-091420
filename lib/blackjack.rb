@@ -31,9 +31,8 @@ end
 
 def initial_round
   sum = 0
-  Times(2) do 
-    sum += deal_card
-  end
+  sum += deal_card
+  sum += deal_card
   # code #initial_round here
   display_card_total(sum)
 end
