@@ -48,7 +48,7 @@ def hit?
       invalid_command
     end
   end
-  if move = "h"
+  if move == "h"
     deal_card
   end
     
