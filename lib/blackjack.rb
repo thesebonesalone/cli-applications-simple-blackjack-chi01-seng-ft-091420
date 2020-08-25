@@ -41,13 +41,19 @@ end
 def hit?(total)
   # code hit? here
   prompt_user
-  move = get_user_input
-  if move == "h"
+  
+  move = ""
+  while move != "s" && move != "h" do
+    move = get_user_input
+    if move != "s" && move != "h"
+      invalid_command
+    end
+  end
+  if move = "h"
     total += deal_card
   end
-  if move != "h" && move != "s"
-    invalid_command
-  end
+  
+  
   total  
 end
 
