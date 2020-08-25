@@ -16,13 +16,16 @@ end
 
 def prompt_user
   # code #prompt_user here
+  puts "Type 'h' to hit or 's' to stay"
 end
 
 def get_user_input
+  gets.chomp
   # code #get_user_input here
 end
 
-def end_game
+def end_game(numb)
+  
   # code #end_game here
 end
 
