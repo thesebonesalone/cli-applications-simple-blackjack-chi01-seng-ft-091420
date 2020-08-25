@@ -47,6 +47,7 @@ def hit?(total)
     move = get_user_input
     if move != "s" && move != "h"
       invalid_command
+      prompt_user
     end
   end
   if move == "h"
