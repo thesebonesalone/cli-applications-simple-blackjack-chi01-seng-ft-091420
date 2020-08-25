@@ -30,7 +30,10 @@ def end_game(numb)
 end
 
 def initial_round
-  sum = deal_card + deal_card
+  sum = 0
+  Times(2) do 
+    sum += deal_card
+  end
   # code #initial_round here
   display_card_total(sum)
 end
